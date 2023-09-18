@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM RPS</title>
+  <link rel="stylesheet" href="10.RPS.css" type="text/css" media="all" />
+</head>
+<body>
+  <h1>Rock Paper Scissor</h1>
+<button class="button-brru" onclick="
+givenResult('Rock');
+"> <img class="image-icon" src="RPS-images/rock-emoji.png" alt="error" /> </button>
+<button class="button-brru" onclick="
+givenResult('Paper');
+"><img class="image-icon" src="RPS-images/paper-emoji.png" alt=""></button>
+<button class="button-brru" onclick="
+givenResult('Scissors');
+"><img class="image-icon" src="RPS-images/scissors-emoji.png" alt="erroe"></button>
+<p class="standing-Score style-play"></p>
+<p class="standing-Play "></p>
+<p class="scoring"></p>
+<button class="reset" onclick="
+removeScoring();
+popUpScore();
+
+">Reset score</button>
+
+  <script src="10.RPS.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
