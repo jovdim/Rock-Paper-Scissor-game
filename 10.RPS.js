@@ -61,7 +61,7 @@ let score = JSON.parse(localStorage.getItem('score'))|| {
     standingScore = JSON.stringify(score);
   localStorage.setItem('score', standingScore);
  
-  document.querySelector('.standing-Play').innerHTML = `You <img class="image-icon" src="${playerMove}-emoji.png" alt="error"> <img class="image-icon" src="${comMove}-emoji.png" alt="error"> Computer`;
+  document.querySelector('.standing-Play').innerHTML = `You <img class="image-icon" src="`${playerMove}-emoji.png`" alt="error"> <img class="image-icon" src="${comMove}-emoji.png" alt="error"> Computer`;
   document.querySelector('.standing-Score').innerHTML = result;
   
   console.log (`You pick ${playerMove}\nComputer pick ${comMove}\n${result}\n\nWINS ${score.wins} LOSSES ${score.losses} TIES ${score.ties}`)
